@@ -1,0 +1,40 @@
+{
+  "name": "exif-pilot",
+  "version": "1.0.0",
+  "description": "Exif Pilot makes it easy to read, add, and update EXIF metadata in images with a simple and flexible API.",
+  "main": "./dist/index.cjs.js",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "files": [
+    "./dist/index.cjs.js",
+    "./dist/index.esm.js"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs.js",
+      "import": "./dist/index.esm.js"
+    }
+  },
+  "keywords": [
+    "exif",
+    "metadata",
+    "image",
+    "tool",
+    "image",
+    "png",
+    "jpg"
+  ],
+  "author": "Adbulla Saeed <me@restoredbytes.com> (https://github.com/6f5)",
+  "license": "MIT",
+  "dependencies": {
+    "@rollup/plugin-babel": "6.0.4",
+    "@rollup/plugin-commonjs": "26.0.1",
+    "@rollup/plugin-node-resolve": "15.2.3",
+    "exiftool-vendored": "28.2.1"
+  },
+  "devDependencies": {
+    "rollup": "4.21.2"
+  }
+}
