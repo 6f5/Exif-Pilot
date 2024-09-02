@@ -26,6 +26,10 @@
     "png",
     "jpg"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/6f5/exif-pilot"
+  },
   "author": "Adbulla Saeed <me@restoredbytes.com> (https://github.com/6f5)",
   "license": "MIT",
   "dependencies": {
