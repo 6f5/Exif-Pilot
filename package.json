@@ -34,12 +34,12 @@
   "author": "Adbulla Saeed <me@restoredbytes.com> (https://github.com/6f5)",
   "license": "MIT",
   "dependencies": {
-    "@rollup/plugin-babel": "6.0.4",
-    "@rollup/plugin-commonjs": "26.0.1",
-    "@rollup/plugin-node-resolve": "15.2.3",
     "exiftool-vendored": "28.2.1"
   },
   "devDependencies": {
+    "@rollup/plugin-babel": "6.0.4",
+    "@rollup/plugin-commonjs": "26.0.1",
+    "@rollup/plugin-node-resolve": "15.2.3",
     "rollup": "4.21.2"
   }
 }
