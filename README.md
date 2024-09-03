@@ -39,7 +39,7 @@ Add new EXIF metadata to an image file.
 ```js
 const exifPilot = require("exif-pilot");
 
-await exifPilot.add("path/to/image.jpg", {
+await exifPilot.write("path/to/image.jpg", {
   Artist: "John Doe",
   Copyright: "2024 John Doe",
 });
@@ -52,7 +52,7 @@ Modify existing EXIF metadata.
 ```js
 const exifPilot = require("exif-pilot");
 
-await exifPilot.update("path/to/image.jpg", {
+await exifPilot.write("path/to/image.jpg", {
   Artist: "Jane Doe",
   DateTimeOriginal: "2024:09:01 12:34:56",
 });
@@ -125,9 +125,7 @@ await exifPilot.write("path/to/image.jpg", {
 - **Example**:
 
   ```javascript
-  const result = await exifPilot.strip("path/to/image.jpg", [
-    "Artist",
-  ]);
+  const result = await exifPilot.strip("path/to/image.jpg", ["Artist"]);
   console.log(result);
   ```
 
